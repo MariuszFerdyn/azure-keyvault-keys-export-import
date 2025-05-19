@@ -1,4 +1,4 @@
-name: 01 - Build Azure Metrics Downloader
+name: 01 - Build Azure KeyVault Keys Tool
 
 on:
   workflow_dispatch
