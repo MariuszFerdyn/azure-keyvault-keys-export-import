@@ -18,17 +18,39 @@ A command-line tool for exporting and importing keys from Azure Key Vault, inclu
 
 ## Important Security Note on Key Material
 
-**Azure KeyVault Security Design:** By default, keys generated within Azure KeyVault are designed to be non-exportable for security reasons. When exporting such keys:
+If you don't see private key parameters (d, p, q, dp, dq, qi) in the exported keys, that's actually expected behavior due to Azure Key Vault's security design.
 
-1. **Keys generated in KeyVault**: Only public components will be exported (e.g., for RSA keys, only 'n' and 'e' values)
-2. **Keys imported into KeyVault**: Both public and private components can be exported if they were originally imported with private material
+Here's why you only see public key components:
 
-When importing keys with only public components:
-- They can only be used for encryption operations
-- They cannot be used for decryption or signing operations
-- The tool will clearly identify these limitations during import
+1. **By design, Azure Key Vault doesn't allow export of private key material**:
+   * For keys generated inside Azure Key Vault (as opposed to imported), the private key material is specifically designed to be non-exportable
+   * This is a critical security feature of Azure Key Vault as a Hardware Security Module (HSM)
+   * When you create a key in Key Vault, the private material never leaves the secured environment
 
-This limitation is due to Azure KeyVault's security design and not a limitation of this tool. The tool displays clear warnings and counts of keys with complete or partial material.
+2. **What you can export**:
+   * Public key components (n, e)
+   * Key metadata (name, enabled status, activation/expiration dates, etc.)
+   * Tags and other attributes
+
+3. **What you cannot export**:
+   * Private key components (d, p, q, dp, dq, qi)
+   * The actual secret material needed for decryption or signing
+
+This is an important security principle: **keys generated in Azure Key Vault are designed to be used there but not extracted**. The only keys where you would see private key material in an export would be those that you previously imported with private key material.
+
+To clarify the tool's actual capabilities:
+
+1. It can export:
+   * Complete keys (public and private material) for keys that were originally imported with private material
+   * Only public key material for keys generated within Azure Key Vault
+
+2. It can import:
+   * Complete keys with private material (if you have that material)
+   * Public-only keys (which would only be useful for encryption operations)
+
+If you need to truly "move" keys with their private material between key vaults, you would need to:
+1. Import the original key material into the first key vault (rather than generating it there)
+2. Export and then import to the second vault
 
 ## Prerequisites
 
