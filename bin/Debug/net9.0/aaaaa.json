@@ -1,0 +1,128 @@
+[
+  {
+    "Name": "111",
+    "Version": "92e8ee944b05410bb852bf86674324f9",
+    "KeyType": "RSA",
+    "Enabled": true,
+    "Created": "2025-05-18T18:49:36+00:00",
+    "Updated": "2025-05-18T18:49:36+00:00",
+    "KeyOperations": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "RecoveryLevel": "Recoverable\u002BPurgeable",
+    "RecoverableDays": 90,
+    "Tags": {},
+    "KeyParameters": {
+      "kid": "https://migrate018873kv.vault.azure.net/keys/111/92e8ee944b05410bb852bf86674324f9",
+      "kty": "RSA",
+      "key_ops": [
+        "sign",
+        "verify",
+        "wrapKey",
+        "unwrapKey",
+        "encrypt",
+        "decrypt"
+      ],
+      "n": "t9PcWN9axR1B79jWflL7cv5FFBxWS9SVQi5xn0h4Sv4mMzdJ9yGQJoxRFJioynK3zeMm-EDA6sOt8EC4Adn4pxjJ9wCrINcKNcZBNX2DEO0DCSpdvQnxYBdybLH06XvfZYuaOFe5fkTSWKQxGt_l2wserBnofH7RTXf-damHIacaWqH4Y1gTV0DcmfXcnJ95peQT5zDk_XNB6U95DU_2DVE728uK3_LYcmN-Jv0TkNCxSzxdXq_gts7T2KquDE2uWOAmMrKNextz0bKevmxkaudm0fUK6wRLq-dDm-dihsZG4_FkXZ6V-0OfinJfCdI7ASf4DDV020vnt5KaMydh2Q",
+      "e": "AQAB"
+    }
+  },
+  {
+    "Name": "appliance014743agentauthcert",
+    "Version": "d7ccec40d678410f8b83c6390810d258",
+    "KeyType": "RSA",
+    "Enabled": true,
+    "Created": "2025-05-04T10:50:07+00:00",
+    "Updated": "2025-05-04T10:50:07+00:00",
+    "ExpiresOn": "2026-05-04T10:50:07+00:00",
+    "NotBefore": "2025-05-04T10:40:07+00:00",
+    "KeyOperations": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "RecoveryLevel": "Recoverable\u002BPurgeable",
+    "RecoverableDays": 90,
+    "Tags": {},
+    "KeyParameters": {
+      "kid": "https://migrate018873kv.vault.azure.net/keys/appliance014743agentauthcert/d7ccec40d678410f8b83c6390810d258",
+      "kty": "RSA",
+      "key_ops": [
+        "sign",
+        "verify",
+        "wrapKey",
+        "unwrapKey"
+      ],
+      "n": "y6LP0GwerM34chhZeYpwWV1yu3t3T-e6WCApRfF5JiVrbq0--7iiohERruN51zj9_Eg3trT4lPkzwxATd-yFtTQKFBasxn00ugbHmLTaXs9EOpmFo5tO50rK7_4vFhixbqWwcJH25f5zz6jhGFMd6yn8fwnoD6KzxuNbOijw_HojLwGqZAjYzGttVllJepFAGrn__frMDZU4tLQLctpzyHSwYQJrzRYbkFtVqE9pk3D_EvANbV-Sg7BuYsfEDlSeLH54Jr8T592gnetyVHcA1WE_zAfb9UU1Cd8CJ_TvCG-jVJnIom08n4V5nunttB0ERz6jxoG2jVSHOa9W4L0sOQ",
+      "e": "AQAB"
+    }
+  },
+  {
+    "Name": "project-app018999agentauthcert",
+    "Version": "47aab46dd8b24c5a811dfa855c1c5cff",
+    "KeyType": "RSA",
+    "Enabled": true,
+    "Created": "2025-05-04T12:25:08+00:00",
+    "Updated": "2025-05-04T12:25:08+00:00",
+    "ExpiresOn": "2026-05-04T12:25:08+00:00",
+    "NotBefore": "2025-05-04T12:15:08+00:00",
+    "KeyOperations": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "RecoveryLevel": "Recoverable\u002BPurgeable",
+    "RecoverableDays": 90,
+    "Tags": {},
+    "KeyParameters": {
+      "kid": "https://migrate018873kv.vault.azure.net/keys/project-app018999agentauthcert/47aab46dd8b24c5a811dfa855c1c5cff",
+      "kty": "RSA",
+      "key_ops": [
+        "sign",
+        "verify",
+        "wrapKey",
+        "unwrapKey"
+      ],
+      "n": "vc0ZYqCGl_D2kJleaZGRLdx7tIsiW33vl8XIYssnlXyRd1CcIs-ab-VJk5R8s2-Nw_lRNW5BxAR1p9m_jfpyIjae4ntB-KlQtbHkUVwVO9jV5mQONodNocBv8428S2Mks1mS_s6JVVsL5mYdhD7PZREbRuoDmyVpQzhjCb5jqb7QZr2y2_AQWGGKF37eLqC_0O6yGnzBqRnceCKyFe4SphewS71dNgY3BjSoM3YSVCJrq-hdXXHq744OaIbxjvfeGb8r4uQQQdvSL-HCNkzJKXi-Wjdaae_3yODcU7E8fmPsIBHSWLecwtSIPDi0gFnNZV-8bFy3gvb_93luh_F_OQ",
+      "e": "AQAB"
+    }
+  },
+  {
+    "Name": "project-app01d3b8agentauthcertv2",
+    "Version": "071de0ec15dc4031b88a3caf50871842",
+    "KeyType": "RSA",
+    "Enabled": true,
+    "Created": "2025-05-04T12:42:25+00:00",
+    "Updated": "2025-05-04T12:42:25+00:00",
+    "ExpiresOn": "2026-05-04T12:42:25+00:00",
+    "NotBefore": "2025-05-04T12:32:25+00:00",
+    "KeyOperations": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "RecoveryLevel": "Recoverable\u002BPurgeable",
+    "RecoverableDays": 90,
+    "Tags": {},
+    "KeyParameters": {
+      "kid": "https://migrate018873kv.vault.azure.net/keys/project-app01d3b8agentauthcertv2/071de0ec15dc4031b88a3caf50871842",
+      "kty": "RSA",
+      "key_ops": [
+        "sign",
+        "verify",
+        "wrapKey",
+        "unwrapKey"
+      ],
+      "n": "oDEbvfjlGcAIlCRmpgHemSogf1Oon7ZH061m9Q0Q96R6q47MifBvS-SA-B1OsCPEv4FpVUhXek9CC7JgBu4bnagQc9qjkodUT8c_6HQlK6lohct9m67W5I8tOwmc58p96yTCGLMkF_M-U8PK20lG8AkAwKvMUUVPraYFmjedXQ7h4syvyMxN4VifFfOaw3_fADsX0koO0ITVB54ttuZSzyvWqLDHNUzScYOY9DjOHxqZY-F5Pvd7VI0lsJeBSP1eqk9ddsZ39_Y7pfe5kgu7jryvDaDqkPPaAndh9UTpqHLk0qPFm3kdxfFM1jXvefL2xCcBH37sIgtuS-wwlOUnfQ",
+      "e": "AQAB"
+    }
+  }
+]

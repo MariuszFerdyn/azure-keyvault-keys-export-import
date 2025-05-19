@@ -1,0 +1,18 @@
+.vscode/
+bin/
+obj/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+.vs/
+
+# Local export/import files
+*.json
+!.vscode/*.json
+
+# Downloaded packages
+*.nupkg
+
+# Debug log files
+*.log

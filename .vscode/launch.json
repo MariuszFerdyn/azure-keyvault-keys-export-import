@@ -1,0 +1,39 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Export Keys",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/bin/Debug/net9.0/AzureKeyVaultTool.dll",
+      "args": [
+        "export",
+        "--key-vault-name",
+        "your-key-vault-name",
+        "--file-path",
+        "keys-export.json"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    },
+    {
+      "name": "Import Keys",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/bin/Debug/net9.0/AzureKeyVaultTool.dll",
+      "args": [
+        "import",
+        "--key-vault-name",
+        "your-key-vault-name",
+        "--file-path",
+        "keys-export.json"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    }
+  ]
+}

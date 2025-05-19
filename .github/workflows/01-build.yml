@@ -1,0 +1,31 @@
+name: 01 - Build Azure Metrics Downloader
+
+on:
+  workflow_dispatch
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1.1
+
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1.2.0
+      
+    - name: Restore NuGet packages
+      run: nuget restore AzureKeyVaultTool.sln
+
+    - name: Build Solution
+      run: msbuild AzureKeyVaultTool.sln /p:Configuration=Release /p:Platform="Any CPU"
+      
+    - name: Upload Build Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: build-artifacts
+        path: |
+          **/bin/Release/
+          **/obj/Release/
